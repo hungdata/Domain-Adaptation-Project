@@ -1,0 +1,18 @@
+# =============================================================================
+# CDAN (Conditional Domain Adversarial Network)
+# =============================================================================
+# Loss: L = L_CE_source + λ · L_CDAN
+# Sử dụng outer product giữa Feature và Classifier Prediction để
+# condition Domain Discriminator.
+
+method: "CDAN"
+data_root: "./uda_fixed_folders"
+output_dir: "./working"
+batch_size: 64
+epochs: 150
+lr: 0.01
+seed: 42
+num_workers: 0
+warmup: 10
+deterministic: true
+backbone: "mobilenet_v3_small"

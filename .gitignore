@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Training outputs
+working/
+results/
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary and scratch files
+checkloi.md
+implementation_plan.md
+totalproject.md
+patch_ir.py
+patch_ir2.py
+fix_all_bugs.py
